@@ -34,10 +34,10 @@ class SendDicomDialog(QDialog):
 
         style = """
             QDialog { background-color: #fafafa; }
-            QLabel { font-size: 12px; color: #212121; }
+            QLabel { font-size: 9pt; color: #212121; }
             QLineEdit, QSpinBox, QComboBox {
                 border: 1px solid #bdbdbd; border-radius: 4px;
-                padding: 4px 8px; font-size: 12px;
+                padding: 4px 8px; font-size: 9pt;
                 background-color: #ffffff; color: #212121;
             }
             QComboBox QAbstractItemView {
@@ -131,7 +131,7 @@ class SendDicomDialog(QDialog):
         self.log_area = QTextEdit()
         self.log_area.setReadOnly(True)
         self.log_area.setMaximumHeight(120)
-        self.log_area.setStyleSheet("font-size: 11px; background-color: #263238; color: #e0e0e0; border-radius: 4px;")
+        self.log_area.setStyleSheet("font-size: 8pt; background-color: #263238; color: #e0e0e0; border-radius: 4px;")
         layout.addWidget(self.log_area)
 
         # ---- 傳送與測試按鈕 ----
@@ -143,7 +143,7 @@ class SendDicomDialog(QDialog):
             QPushButton {
                 background-color: #00bcd4; color: white;
                 border: none; border-radius: 4px;
-                padding: 0 24px; font-weight: bold; font-size: 13px;
+                padding: 0 24px; font-weight: bold; font-size: 10pt;
             }
             QPushButton:hover { background-color: #00acc1; }
             QPushButton:disabled { background-color: #80deea; }
@@ -156,7 +156,7 @@ class SendDicomDialog(QDialog):
             QPushButton {
                 background-color: #4CAF50; color: white;
                 border: none; border-radius: 4px;
-                padding: 0 24px; font-weight: bold; font-size: 13px;
+                padding: 0 24px; font-weight: bold; font-size: 10pt;
             }
             QPushButton:hover { background-color: #45a049; }
             QPushButton:disabled { background-color: #a5d6a7; }
@@ -167,7 +167,7 @@ class SendDicomDialog(QDialog):
             QPushButton {
                 background-color: #757575; color: white;
                 border: none; border-radius: 4px;
-                padding: 0 24px; font-weight: bold; font-size: 13px;
+                padding: 0 24px; font-weight: bold; font-size: 10pt;
             }
             QPushButton:hover { background-color: #616161; }
         """)

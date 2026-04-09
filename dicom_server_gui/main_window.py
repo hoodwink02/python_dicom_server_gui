@@ -63,10 +63,10 @@ class MainWindow(QMainWindow):
         control_layout = QHBoxLayout()
 
         input_style = """
-            QLabel { font-weight: bold; font-size: 12px; color: #212121; }
+            QLabel { font-weight: bold; font-size: 9pt; color: #212121; }
             QLineEdit, QSpinBox {
                 border: 1px solid #bdbdbd; border-radius: 4px;
-                padding: 4px 8px; font-size: 12px;
+                padding: 4px 8px; font-size: 9pt;
                 background-color: #ffffff; color: #212121;
             }
         """
@@ -101,7 +101,7 @@ class MainWindow(QMainWindow):
             QPushButton {
                 background-color: #4CAF50; color: white;
                 border: none; border-radius: 4px;
-                padding: 0 20px; font-weight: bold; font-size: 13px;
+                padding: 0 20px; font-weight: bold; font-size: 10pt;
             }
             QPushButton:hover { background-color: #45a049; }
             QPushButton:disabled { background-color: #a5d6a7; }
@@ -114,7 +114,7 @@ class MainWindow(QMainWindow):
             QPushButton {
                 background-color: #f44336; color: white;
                 border: none; border-radius: 4px;
-                padding: 0 20px; font-weight: bold; font-size: 13px;
+                padding: 0 20px; font-weight: bold; font-size: 10pt;
             }
             QPushButton:hover { background-color: #e53935; }
             QPushButton:disabled { background-color: #ef9a9a; }
@@ -131,7 +131,7 @@ class MainWindow(QMainWindow):
             QPushButton {
                 background-color: #1976d2; color: white;
                 border: none; border-radius: 4px;
-                padding: 0 20px; font-weight: bold; font-size: 13px;
+                padding: 0 20px; font-weight: bold; font-size: 10pt;
             }
             QPushButton:hover { background-color: #1565c0; }
         """)
@@ -144,7 +144,7 @@ class MainWindow(QMainWindow):
             QPushButton {
                 background-color: #757575; color: white;
                 border: none; border-radius: 4px;
-                padding: 0 20px; font-weight: bold; font-size: 13px;
+                padding: 0 20px; font-weight: bold; font-size: 10pt;
             }
             QPushButton:hover { background-color: #616161; }
         """)
@@ -157,7 +157,7 @@ class MainWindow(QMainWindow):
             QPushButton {
                 background-color: #ff9800; color: white;
                 border: none; border-radius: 4px;
-                padding: 0 20px; font-weight: bold; font-size: 13px;
+                padding: 0 20px; font-weight: bold; font-size: 10pt;
             }
             QPushButton:hover { background-color: #fb8c00; }
         """)
@@ -191,7 +191,7 @@ class MainWindow(QMainWindow):
         self.table_patients.setStyleSheet("""
             QTableWidget {
                 border: 1px solid #ddd; border-radius: 4px;
-                gridline-color: #eee; font-size: 12px;
+                gridline-color: #eee; font-size: 9pt;
                 background-color: #ffffff; color: #212121;
                 alternate-background-color: #f5f5f5;
             }
@@ -225,7 +225,7 @@ class MainWindow(QMainWindow):
             QPushButton {
                 background-color: #607d8b; color: white;
                 border: none; border-radius: 4px;
-                padding: 0 12px; font-weight: bold; font-size: 12px;
+                padding: 0 12px; font-weight: bold; font-size: 9pt;
             }
             QPushButton:hover { background-color: #546e7a; }
             QPushButton:disabled { background-color: #b0bec5; }
@@ -240,7 +240,7 @@ class MainWindow(QMainWindow):
             QPushButton {
                 background-color: #ff9800; color: white;
                 border: none; border-radius: 4px;
-                padding: 0 12px; font-weight: bold; font-size: 12px;
+                padding: 0 12px; font-weight: bold; font-size: 9pt;
             }
             QPushButton:hover { background-color: #fb8c00; }
             QPushButton:disabled { background-color: #ffcc80; }
@@ -255,7 +255,7 @@ class MainWindow(QMainWindow):
             QPushButton {
                 background-color: #3f51b5; color: white;
                 border: none; border-radius: 4px;
-                padding: 0 12px; font-weight: bold; font-size: 12px;
+                padding: 0 12px; font-weight: bold; font-size: 9pt;
             }
             QPushButton:hover { background-color: #3949ab; }
             QPushButton:disabled { background-color: #9fa8da; }
@@ -270,7 +270,7 @@ class MainWindow(QMainWindow):
             QPushButton {
                 background-color: #f44336; color: white;
                 border: none; border-radius: 4px;
-                padding: 0 12px; font-weight: bold; font-size: 12px;
+                padding: 0 12px; font-weight: bold; font-size: 9pt;
             }
             QPushButton:hover { background-color: #e53935; }
             QPushButton:disabled { background-color: #ef9a9a; }
@@ -299,7 +299,7 @@ class MainWindow(QMainWindow):
         self.image_label.setStyleSheet("""
             QLabel {
                 background-color: transparent; color: #90a4ae;
-                font-size: 14px;
+                font-size: 11pt;
             }
         """)
         self.scroll_area.setWidget(self.image_label)
@@ -314,7 +314,7 @@ class MainWindow(QMainWindow):
             QPushButton {
                 background-color: #455a64; color: white;
                 border: none; border-radius: 4px;
-                padding: 4px 12px; font-weight: bold; font-size: 13px;
+                padding: 4px 12px; font-weight: bold; font-size: 10pt;
             }
             QPushButton:hover { background-color: #37474f; }
         """
@@ -343,7 +343,7 @@ class MainWindow(QMainWindow):
         self.label_frame_info = QLabel("1 / 1")
         self.label_frame_info.setFixedWidth(60)
         self.label_frame_info.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self.label_frame_info.setStyleSheet("font-size: 12px; color: #212121;")
+        self.label_frame_info.setStyleSheet("font-size: 9pt; color: #212121;")
 
         frame_nav_layout.addWidget(self.btn_prev_frame)
         frame_nav_layout.addWidget(self.frame_slider)
@@ -696,8 +696,8 @@ class MainWindow(QMainWindow):
                 self.image_label.clear()
                 self.image_label.setText(
                     f'<div style="text-align:center;">'
-                    f'<h2 style="color: #b0bec5; font-size: 18px;">此為封裝 PDF 文件</h2>'
-                    f'<br><a href="open_pdf" style="color: #64b5f6; font-size: 16px; font-weight: bold; text-decoration: none;">📄 點擊外部開啟 PDF</a>'
+                    f'<h2 style="color: #b0bec5; font-size: 14pt;">此為封裝 PDF 文件</h2>'
+                    f'<br><a href="open_pdf" style="color: #64b5f6; font-size: 12pt; font-weight: bold; text-decoration: none;">📄 點擊外部開啟 PDF</a>'
                     f'</div>'
                 )
                 self.status_bar.showMessage(f"顯示文件: {file_path}")
@@ -945,7 +945,7 @@ if __name__ == "__main__":
         QStatusBar {
             background-color: #37474f;
             color: white;
-            font-size: 12px;
+            font-size: 9pt;
         }
     """)
 

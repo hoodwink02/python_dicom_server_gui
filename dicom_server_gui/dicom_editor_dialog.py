@@ -61,7 +61,7 @@ class DicomEditorDialog(QDialog):
             QTableWidget {
                 alternate-background-color: #f5f5f5;
                 font-family: Consolas, monospace;
-                font-size: 13px;
+                font-size: 10pt;
                 background-color: #ffffff; color: #212121;
             }
             QTableWidget::item { padding: 4px; }
